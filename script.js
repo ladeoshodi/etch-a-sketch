@@ -9,8 +9,8 @@ const clearButton = document.querySelector(".clear-button");
 
 function isValidGridSize(size) {
     // check the user input is between 1 and 100 (exclusive)
-    if (size < 1 || size > 20) {
-        alert("Please enter a value between 1 and 20");
+    if (size < 1 || size > 100) {
+        alert("Please enter a value between 1 and 100");
     }
 
     return true;
@@ -45,7 +45,7 @@ createButton.addEventListener("click", () => {
     clearGrid();
 
     // get the size of the new grid to be created
-    let userInput = prompt("Enter size of new grid between 1 - 20");
+    let userInput = prompt("Enter size of new grid between 1 - 100");
 
     if (isValidGridSize(userInput)) {
         createGrid(userInput);
