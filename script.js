@@ -11,6 +11,7 @@ function isValidGridSize(size) {
     // check the user input is between 1 and 100 (exclusive)
     if (size < 1 || size > 100) {
         alert("Please enter a value between 1 and 100");
+        return false;
     }
 
     return true;
