@@ -1,6 +1,7 @@
 const grid = document.querySelector(".grid");
-const GRIDWIDTH = 900;
-grid.style.width = `${GRIDWIDTH}px`;
+let gridWidth = window.innerWidth;
+console.log(gridWidth);
+grid.style.width = `${gridWidth}px`;
 
 const createButton = document.querySelector(".create-button");
 
@@ -29,7 +30,7 @@ function createGrid(size) {
         square.setAttribute("class", `square square-${i}`);
         
         // set the width of the grid
-        square.style.width = `${GRIDWIDTH / size}px`;
+        square.style.width = `${gridWidth / size}px`;
 
         // add an event listener to change the div background on mouse hover
         square.addEventListener("mouseover", () => {
