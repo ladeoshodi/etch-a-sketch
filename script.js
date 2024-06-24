@@ -1,8 +1,10 @@
 const grid = document.querySelector(".grid");
-const GRIDWIDTH = 1024;
+const GRIDWIDTH = 900;
 grid.style.width = `${GRIDWIDTH}px`;
 
-const button = document.querySelector(".button");
+const createButton = document.querySelector(".create-button");
+
+const clearButton = document.querySelector(".clear-button");
 
 function isValidGridSize(size) {
     // check the user input is between 1 and 100 (exclusive)
@@ -37,7 +39,7 @@ function createGrid(size) {
     }
 }
 
-button.addEventListener("click", () => {
+createButton.addEventListener("click", () => {
     // clear existing grid
     clearGrid();
 
@@ -49,3 +51,7 @@ button.addEventListener("click", () => {
     }
 });
 
+clearButton.addEventListener("click", () => {
+    // clear existing grid
+    clearGrid();
+});
