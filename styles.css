@@ -26,3 +26,11 @@ body {
 .draw {
     background-color: rgb(204, 0, 255);
 }
+
+.button {
+    padding: 10px;
+    margin: 15px;
+    background-color: rgb(187, 31, 31);
+    color: white;
+    border: 1px solid white;
+}
