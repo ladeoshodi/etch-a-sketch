@@ -15,12 +15,11 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
 }
 .square {
     background-color: aqua;
-    flex: 1 0 calc(100% / 18);
     aspect-ratio: 1;
+    border: 1px solid white;
 }
 
 .draw {
