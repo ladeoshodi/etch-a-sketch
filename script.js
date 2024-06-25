@@ -1,6 +1,5 @@
 const grid = document.querySelector(".grid");
 let gridWidth = window.innerWidth;
-console.log(gridWidth);
 grid.style.width = `${gridWidth}px`;
 
 const createButton = document.querySelector(".create-button");
